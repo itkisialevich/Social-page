@@ -1,0 +1,45 @@
+.geo {
+    grid-area: geo;
+    display: flex;
+    flex-direction: column;
+    padding: 23px 20px 29px 20px;
+    background-color: $b-color;
+    border: 1px solid #ebebeb;
+    border-radius: 13px;
+
+    .geo__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+
+        .geo__title {
+            margin-right: 150px;
+            @include subtitle;
+        }
+
+        .geo__indicator {
+            margin-right: 20px;
+            font-weight: 600;
+            font-size: 12px;
+            font-family: 'Poppins' sans-serif;
+            line-height: 14px;
+            color: #979797;
+        }
+
+        .geo__indicator:hover {
+            color: $text-color; 
+        }
+
+        .geo__indicator-city {
+            margin-right: 0px;
+        }
+    }
+
+    .geo__img { 
+        width: 294px;
+        height: 120px;
+    }
+
+
+}

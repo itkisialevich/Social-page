@@ -1,0 +1,85 @@
+.logo__img {
+    margin-top: 60px;
+    width: 42px;
+    height: 24px;  
+}
+
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .nav__item {
+        margin-bottom: 40px;
+
+        .nav__link {
+
+            .nav__img {
+                position: relative;
+                width: 25px;
+            
+            }
+        }
+    }
+
+    .nav__item-active {
+        position: relative;
+    }
+    
+    .nav__item-active:before{
+        content: '';
+        position: absolute;
+        top: -30%;
+        left: -130%;
+        width: 4px;
+        height: 50px;
+        background-color: #7f7fd5;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+   
+}
+
+.nav__tumbler {
+    margin-bottom: 48px;
+}
+
+/* Burger config ----------------------------------------------------------
+---------------------------------------------------------------------------*/
+
+.nav__button {
+    position: absolute;
+    top: calc(50% - 14px);
+    right: 5%;
+    display: none;
+    width: 30px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.nav__button-burger {
+    position: absolute;
+    top: 13px;
+    width: 30px;
+    height: 2px;
+    background-color: #7f7fd5;
+}
+
+.nav__button-burger:before {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    width: 30px;
+    height: 2px;
+    background-color: #7f7fd5;
+}
+
+.nav__button-burger:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 30px;
+    height: 2px;
+    background-color: #7f7fd5;
+}

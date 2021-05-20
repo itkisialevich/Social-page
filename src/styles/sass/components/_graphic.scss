@@ -1,0 +1,64 @@
+.graphic {
+    grid-area: graphic;
+    display: flex;
+    flex-direction: column;
+    padding: 27px 28px 22px 24px;
+    background-color: $b-color;
+    border: 1px solid #ebebeb;
+    border-radius: 13px;
+
+    .graphic__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+
+        .graphic__title {
+            margin-right: 196px;
+            @include subtitle;
+        }
+
+        .graphic__dates {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 32px;
+    
+            .dates__date {
+                margin-right: 3px;
+                font-weight: 500;
+                font-size: 12px;
+                font-family: 'Poppins' sans-serif;
+                line-height: 14px;
+                color: $text-color;
+            }
+    
+            .dates__switch {
+                width: 8px;
+                height: 4px;
+            }
+        }
+    
+        .graphic__choice {
+            display: flex;
+            justify-content: space-between;
+
+            .choice__indicator {
+                margin-right: 6px;
+                width: 16px;
+                height: 16px;
+            }
+
+            .choice__text {
+                margin-right: 6px;
+                font-weight: 600;
+                font-size: 12px;
+                font-family: 'Poppins' sans-serif;
+                line-height: 14px;
+                color: $text-color;
+            }
+        }
+       
+    }
+    
+}

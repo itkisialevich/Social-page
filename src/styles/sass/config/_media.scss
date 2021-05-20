@@ -1,0 +1,308 @@
+/* Media max-width 569px config ----------------------------------------------------------
+---------------------------------------------------------------------------*/
+
+@media (max-width: 568px){
+    .wrapper{
+        width: 100%;
+    }
+
+    .app {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        background: #E7D5F2;
+        border: none;
+
+        .app__nav {
+            position: sticky;
+            top: 0px;
+            z-index: 2;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 0px 10px;
+            width: 100%;
+            height: 60px;
+            border-bottom: 1px solid #979797;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+
+            .logo__img {
+                margin-top: 0px;  
+            }
+            
+            .nav__list {
+                display: none;
+            }
+
+            .nav__button {
+                display: block;
+            }
+
+            .nav__tumbler {
+                display: none;
+                margin-bottom: 0px;
+            }
+            
+        }
+
+        .app__main {
+            width: 100%;
+            padding: 0px;
+        
+            .header { 
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+                padding: 0px 20px;
+
+                .header__menu {
+                    margin-bottom: 20px;
+        
+                    .menu__title {
+                    margin-right: 0px;
+                    font-size: 22px;
+                    line-height: 20px;
+                    }
+                }
+            }
+
+            .body {
+                display: grid;
+                grid-template-rows: 148px 148px 148px 242px 242px 242px 242px;
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                "card"
+                "card"
+                "card"
+                "graphic"
+                "diagramm"
+                "gistogramm"
+                "geo";
+                justify-content: center;
+                grid-gap: 5px;
+
+                .card {
+                    grid-row: auto;
+                    
+                    .card__number {
+                        margin-right: 70px;
+                    } 
+                }
+
+                .graphic {
+                    overflow: auto;
+
+                    .graphic__header {
+                        width: 410px;
+
+                        .graphic__title {
+                        margin-right: 10px;
+                        }
+
+                        .graphic__dates {
+                            margin-right: 10px;
+                        }
+                    }
+                   
+                   .graphic__image {
+                        width: 410px;
+                        height: 120px;
+                    }
+                }
+
+                .gistogramm {
+                    overflow: auto;
+
+                    .gistogramm__header {
+                        width: 410px;
+                        
+                        .gistogramm__title {
+                        margin-right: 0px; 
+                        }
+                    }
+                   
+                   .gistogramm__img {
+                        width: 410px;
+                        height: 120px;
+                    }
+                }
+
+                .geo {
+                    padding: 20px;
+                   
+                    .geo__title {
+                        margin-right: 0px;
+                    }
+
+                    .geo__img {
+                        width: 278px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+/* Media 569px-768px config ----------------------------------------------------------
+---------------------------------------------------------------------------*/
+
+@media (min-width: 569px) and (max-width: 768px){
+    .wrapper{
+        width: 100%;
+    }
+
+    .app {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        background: #E7D5F2;
+        border: none;
+
+        .app__nav {
+            position: sticky;
+            top: 0px;
+            z-index: 2;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 0px 50px;
+            width: 100%;
+            height: 60px;
+            border-bottom: 1px solid #979797;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+
+            .logo__img {
+                margin-top: 0px;  
+            }
+            
+            .nav__list {
+                display: none;
+            }
+
+            .nav__button {
+                display: block;
+                right: 8%;
+
+            }
+
+            .nav__tumbler {
+                display: none;
+                margin-bottom: 0px;
+            }
+            
+        }
+
+        .app__main {
+            width: 100%;
+            padding: 0px;
+        
+            .header { 
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                padding: 0px 50px;
+
+                .header__menu {
+                    margin-bottom: 20px;
+        
+                    .menu__title {
+                    margin-right: 150px;
+                    font-size: 22px;
+                    line-height: 20px;
+                    }
+                }
+            }
+
+            .body {
+                display: grid;
+                grid-template-rows: repeat(6, 81px) 242px 242px;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                "card diagramm"
+                "card diagramm"
+                "card diagramm"
+                "card geo"
+                "card geo"
+                "card geo"
+                "graphic graphic"
+                "gistogramm gistogramm";
+                grid-gap: 5px;
+
+                .card {
+                    grid-row: span 2;
+                    padding: 10px;
+                    
+                    .card__number {
+                        margin-right: 70px;
+                    } 
+                }
+
+                .graphic {
+                      
+                    .graphic__header {
+                        width: 510px;
+                    
+                        .graphic__title {
+                        margin-right: 50px;
+                        }
+
+                        .graphic__dates {
+                        margin-right: 10px;
+                        }
+                    }
+                    
+                    .graphic__image {
+                        align-self: center;
+                        width: 510px;
+
+                    }
+                }
+
+                .gistogramm {
+                    
+                    .gistogramm__header {
+                        width: 510px;
+                        
+                        .gistogramm__title {
+                        margin-right: 50px; 
+                        }
+                    }
+
+                    gistogramm__img {
+                        align-self: center;
+                        width: 510px;
+                    }
+                }
+
+                .geo {
+                    padding: 20px;
+                       
+                    .geo__title {
+                    margin-right: 50px;
+                    }
+                    
+                    .geo__indicator {
+                        margin-right: 0px;
+                    }
+
+                    .geo__img { 
+                        align-self: center;
+                        width: 240px;
+                    }
+
+                }
+                
+            }
+        }
+    }
+}

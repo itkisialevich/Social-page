@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Statistics</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="app">
+
+        <nav class="app__nav"> 
+          <a href="#" class="nav__logo"> <img class="logo__img" src="src/images/nav/logo.png" alt="logo"/></a> 
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#"><img class="nav__img" src="src/images/nav/home.png" alt="home"></a></li>
+            <li class="nav__item"><a class="nav__link" href="#"><img class="nav__img" src="src/images/nav/menu.png" alt="menu"></a></li>
+            <li class="nav__item"><a class="nav__link" href="#"><img class="nav__img" src="src/images/nav/people.png" alt="people"></a></li>
+            <li class="nav__item"><a class="nav__link" href="#"><img class="nav__img" src="src/images/nav/mail.png" alt="mail"></a></li>
+            <li class="nav__item"><a class="nav__link" href="#"><img class="nav__img" src="src/images/nav/play.png" alt="play"></a></li>
+            <li class="nav__item nav__item-active"><a class="nav__link" href="#"><img class="nav__img" src="src/images/nav/statistics.png" alt="statistics"></a></li>
+            <li class="nav__item"><a class="nav__link" href="#"><img class="nav__img" src="src/images/nav/settings.png" alt="settings"></a></li>
+          </ul>          
+          <div class="nav__button">
+            <span class="nav__button-burger"></span>
+          </div>
+          <img class="nav__tumbler" src="src/images/nav/tumbler.png" alt="tumbler">
+        </nav>
+
+        <main class="app__main">
+
+          <header class="header">
+            <div class="header__menu">
+              <a class="menu__title" href="#">Statistics</a>
+              <form class="menu__search">
+                <button class="search__btn" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+                <input class="search__text" type="text" placeholder="Search" />
+              </form>
+              <img class="menu__notification" src="src/images/header/notification.png"  alt="notification"/>
+            </div>
+            <div class="header__user">
+              <h3 class="user__name">Anya</h3>
+              <img class="user__avatar" src="src/images/header/avatar.png" alt="avatar"/>
+              <img  class="user__switch" src="src/images/header/switch.png"  alt="switch"/>
+            </div>
+          </header>
+
+          <div class="body">
+
+            <section class="card">
+              <div class="card__header">
+                <h2 class="title">Friends</h2>
+                <img class="card__menu" src="src/images/card/ellipsis.png" alt="ellipsis"/>
+              </div>
+              <div class="card__info">
+                <p class="card__number">271 people</p>
+                <p class="card__percent">+ 0.7%</p>
+                <img class="card__progress" src="src/images/card/arrowup.png" alt="arrow"/>
+              </div>
+            </section>
+            <section class="card">
+              <div class="card__header">
+                <h2 class="title">Unique visitors</h2>
+                <img class="card__menu" src="src/images/card/ellipsis.png" alt="ellipsis"/>
+              </div>
+              <div class="card__info">
+                <p class="card__number">69 people</p>
+                <p class="card__percent">- 0.7%</p>
+                <img class="card__progress" src="src/images/card/arrowdown.png" alt="arrow"/>
+              </div>
+            </section>
+            <section class="card">
+              <div class="card__header">
+                <h2 class="title">Followers</h2>
+                <img class="card__menu" src="src/images/card/ellipsis.png" alt="ellipsis"/>
+              </div>
+              <div class="card__info">
+                <p class="card__number">288 people</p>
+                <p class="card__percent">+ 1%</p>
+                <img class="card__progress" src="src/images/card/arrowup.png" alt="arrow"/>
+              </div>
+            </section>
+
+            <section class="graphic">
+              <div class="graphic__header">
+                <h2 class="graphic__title">Audience reach</h2>
+                <div class="graphic__dates">
+                  <p class="dates__date">31/01/2020 – 06/02/2020</p>
+                  <img  class="dates__switch" src="src/images/header/switch.png"  alt="switch"/>
+                </div>
+                <div class="graphic__choice">
+                  <img class="choice__indicator" src="src/images/graphic/check-total.png" alt="indicator">
+                  <p class="choice__text">Total</p>
+                  <img class="choice__indicator" src="src/images/graphic/check-follower.png" alt="indicator">
+                  <p class="choice__text">Follower</p>
+                </div>
+              </div>
+              <img class="graphic__image" src="src/images/graphic/graphic.png" alt="graphic"/>
+            </section>
+
+            <section class="diagramm">
+              <h2 class="diagramm__title">Reach by device</h2>
+              <div class="diagramm__info">
+                <img class="diagramm__img" src="src/images/diagramm/diagramm.png" alt="diagramm">
+                <div class="diagramm__value">
+                  <div class="value__desktop">
+                    <img class="value__img" src="src/images/diagramm/desktop-check.png" alt="desktop-check">
+                    <p class="value__text">Desktop</p>
+                  </div>
+                  <div class="value__mobile">
+                    <img class="value__img" src="src/images/diagramm/mobile-check.png" alt="mobile-check">
+                    <p class="value__text">Mobile views</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="gistogramm">
+              <div class="gistogramm__header">
+                <h2 class="gistogramm__title">Gender / Age</h2>
+                <div class="gistogramm__choice">
+                  <img class="gistogramm__indicator" src="src/images/gistogramm/women-check.png" alt="indicator">
+                  <p class="gistogramm__text">Women</p>
+                  <img class="gistogramm__indicator" src="src/images/gistogramm/men-check.png" alt="indicator">
+                  <p class="gistogramm__text">Men</p>
+                </div>
+              </div>
+              <img class="gistogramm__img" src="src/images/gistogramm/gistogramm.png" alt="gistogramm">
+            </section>
+
+            <section class="geo">
+              <div class="geo__header">
+                <h2 class="geo__title">Geo</h2>
+                <p class="geo__indicator">Country</p>
+                <p class="geo__indicator geo__indicator-city">City</p>
+              </div>
+              <img class="geo__img" src="src/images/geo/geo.png" alt="geo">
+            </section>
+            
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+.body {
+    display: grid;
+    grid-template-rows: 148px 242px 242px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "card card card"
+    "graphic graphic diagramm"
+    "gistogramm gistogramm geo";
+    grid-gap: 32px;
+}

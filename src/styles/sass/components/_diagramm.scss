@@ -1,0 +1,49 @@
+.diagramm {
+    grid-area: diagramm;
+    display: flex;
+    flex-direction: column;
+    padding: 22px 23px 31px 23px;
+    background-color: $b-color;
+    border: 1px solid #ebebeb;
+    border-radius: 13px;
+
+    .diagramm__title {
+        margin-bottom: 38px;
+        @include subtitle;
+    }
+
+    .diagramm__info {
+        display: flex;
+        justify-content: space-between;
+
+        .diagramm__img {
+            display: block;
+           
+        }
+
+        .diagramm__value {
+            display: flex;
+            flex-direction: column;
+
+            .value__desktop,
+            .value__mobile {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 11px;
+            }
+
+            .value__text {
+                margin-left: 9px;
+                font-weight: 600;
+                font-size: 12px;
+                font-family: 'Poppins' sans-serif;
+                line-height: 14px;
+                color: $text-color;
+            }
+        }
+
+        
+    }
+
+}

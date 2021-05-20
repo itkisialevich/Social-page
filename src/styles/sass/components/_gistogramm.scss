@@ -1,0 +1,40 @@
+.gistogramm {
+    grid-area: gistogramm;
+    display: flex;
+    flex-direction: column;
+    padding: 23px 41px 5px 24px;
+    background-color: $b-color;
+    border: 1px solid #ebebeb;
+    border-radius: 13px;
+
+    .gistogramm__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 21px;
+
+        .gistogramm__title {
+            margin-right: 335px;
+            @include subtitle; 
+        }
+
+        .gistogramm__choice {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .gistogramm__indicator {
+                margin-right: 6px;
+            }
+
+            .gistogramm__text {
+                margin-right: 6px;
+                font-weight: 600;
+                font-size: 12px;
+                font-family: 'Poppins' sans-serif;
+                line-height: 14px;
+                color: $text-color; 
+            }
+        }
+    }
+
+}

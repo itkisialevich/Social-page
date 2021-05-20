@@ -1,0 +1,91 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+
+    .header__menu { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu__title {
+            margin-right: 45px;
+            font-weight: 700;
+            font-size: 30px;
+            font-family: 'Poppins' sans-serif;
+            line-height: 36px;
+            text-decoration: none;
+            color: $text-color;
+        }
+
+        .menu__search {
+            display: flex;
+            align-items: center;
+            width: 140px;
+            height: 23px;
+            background-color: #FDFDFF;
+            border: 1px solid #EBEBEB;
+            border-radius: 8px;
+
+            .search__btn {
+                width: 25px;
+                height: 23px;
+                margin-right: 11px;
+                border: none;
+                cursor: pointer;
+                background-color: transparent;
+
+                .fa-search {
+                    color: #979797;
+                    width: 9px;
+                    height: 8.2px;
+                }
+            }
+
+            .search__text {
+                width: 115px;
+                height: 23px;
+                margin-left: 0px;
+                padding-left: 0px;
+                font-weight: 500;
+                font-size: 12px;
+                font-family: 'Poppins' sans-serif;
+                line-height: 14px;
+                color: #979797;
+                background-color: transparent;
+                border: none;
+            }
+        }
+        .menu__notification {
+            margin-left: 10px;
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+    .header__user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 130px;
+
+        .user__name {
+            margin-right: 11px;
+            font-weight: 600;
+            font-size: 20px;
+            font-family: 'Poppins' sans-serif;
+            line-height: 24px;
+            color: $text-color;
+        }
+        
+        .user__avatar{
+            width: 50px;
+            height: 50px;
+        }
+
+        .user__switch {
+            width: 8px;
+            height: 4px; 
+        }
+    }
+} 

@@ -1,0 +1,31 @@
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.app {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EFF3F9;
+    border: 1px solid #ebebeb;
+    border-radius: 14px;
+
+    .app__main {
+        width: 1182px;
+        padding: 50px;
+    }
+
+    .app__nav {
+        position: sticky;
+        left: 0px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 98px;
+        background-color: #ffffff;
+        border-top-left-radius: 14px;
+        border-bottom-left-radius: 14px;
+    }
+}
